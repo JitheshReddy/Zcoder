@@ -7,13 +7,14 @@ import SignUp from "./pages/SignUp";
 import Navbar from "./components/NavBar";
 import Profile from "./pages/Profile";
 import MySubmissions from "./pages/MySubmissions";
-import MySubmissionsPage from "./pages//MySubmissionsPage";
+import MySubmissionsPage from "./pages/MySubmissionsPage";
 import SubmissionDetailsPage from "./pages/SubmissionDetailsPage";
 import FunPage from "./pages/FunPage";
+
 function App() {
   return (
     <BrowserRouter>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/questions" element={<QuestionsList />} />
         <Route path="/signin" element={<SignIn />} />
@@ -25,11 +26,8 @@ function App() {
         <Route path="/my-submissions/:questionId" element={<SubmissionDetailsPage />} />
         <Route path="/" element={<FunPage />} />
       </Routes>
-
     </BrowserRouter>
   );
 }
 
 export default App;
-
-
